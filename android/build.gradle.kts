@@ -2,7 +2,15 @@ apply plugin: 'com.google.gms.google-services'
 
 buildscript {
     dependencies {
-        classpath 'com.google.gms:google-services:4.4.0'
+        classpath("com.android.tools.build:gradle:8.3.1")
+        classpath("com.google.gms:google-services:4.4.0") // ✅ FIXED Kotlin syntax
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 
