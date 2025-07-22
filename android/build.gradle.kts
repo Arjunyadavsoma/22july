@@ -1,4 +1,3 @@
-apply plugin: 'com.google.gms.google-services'
 
 buildscript {
     dependencies {
