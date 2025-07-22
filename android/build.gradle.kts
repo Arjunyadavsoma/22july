@@ -1,3 +1,18 @@
+apply plugin: 'com.google.gms.google-services'
+
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+}
+
+
+android {
+    defaultConfig {
+        minSdkVersion 23
+    }
+}
+
 allprojects {
     repositories {
         google()
